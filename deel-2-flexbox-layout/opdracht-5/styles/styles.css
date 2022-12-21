@@ -1,1 +1,38 @@
 /*Schrijf hier jouw CSS*/
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-header {
+    flex: 0 1 15%;
+}
+
+.column-article-nav-aside {
+    display: flex;
+    flex-direction: row;
+}
+.column-article {
+    font-size: 0.9em;
+    height: 70vh;
+    flex: 1 0 70%;
+    order:2;
+}
+
+.column-nav {
+    flex: 0 1 15%;
+    order:1;
+}
+
+.column-aside {
+    flex: 0 1 15%;
+    order:3;
+}
+
+
+.row-footer {
+    flex: 0 1 15%;
+    order:2;
+}
