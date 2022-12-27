@@ -30,10 +30,11 @@ p {
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
+
 }
 li {
     list-style: none;
-    padding: 20px 50px;
+    padding: 20px 20px;
     font-size: 0.7em;
     font-weight: bold;
 }
@@ -47,23 +48,25 @@ a:hover {
 }
 
 .navbar {
+    display: flex;
     background-color: #030027;
     color: #f2f3d9;
+    align-items: center;
 }
 
 .navbar-menu-list {
     height: 80px;
     display: flex;
-    margin: 0;
     justify-content: flex-end;
+    flex-basis: auto;
     align-items: center;
-
+    flex-flow: wrap;
 }
 
-li:nth-of-type(1) {
+.logo {
+    text-transform: uppercase;
     margin-right: auto;
     margin-left: 50px;
-
 }
 
 
@@ -77,5 +80,10 @@ li:nth-of-type(1) {
 .text-blocks {
     display: flex;
     justify-content: center;
-
 }
+
+@media screen and (max-width: 600px) {
+    .text-blocks p {
+        min-width: 200px;
+    }
+    }
